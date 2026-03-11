@@ -1,0 +1,155 @@
+:root{
+    --achtergrondkleur: #e5deca;
+    --complementairekleur: #1a2135;
+    --formkleur: white;
+    
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--achtergrondkleur);
+    color: var(--complementairekleur);
+}
+hr{
+   border: 1px solid var(--complementairekleur);
+   background-color: var(--complementairekleur);
+   margin-bottom: 30px;
+}
+h1 , h3{
+    text-align: center;
+    color: var(--complementairekleur);
+}
+p{
+    
+    margin: 1%;
+    line-height: 1.5;
+}
+.main{
+    display: grid;
+    align-items: center;
+    grid-template-areas: "foto1 tekst";
+}
+.tekst{
+    grid-area: tekst;
+    margin-right: 300px;
+    font-size: large ;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;   
+}
+
+#navbar{
+    margin: 2%;
+    border: 1px solid var(--complementairekleur);
+    padding: 10px;
+    border-radius: 5px;
+    background-color:  var(--complementairekleur);
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    transform: translate(45%);
+    box-shadow: 5px 5px 20px var(--complementairekleur) ;
+}
+#navbar a{
+    text-decoration:none;
+    color:white;
+    margin: 0 20px;
+}
+#navbar a:hover{
+    color: red;
+}
+
+.grid{
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 3fr 1.5fr;
+  align-items: top;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.grid2{
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: top;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+ul li{
+    margin: 1%;
+    line-height: 1.5;
+}
+.grid img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px var(--complementairekleur);
+    align-self: center;
+}
+.gridcircle img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px var(--complementairekleur);
+    align-self: center;
+}
+
+.gridborder{
+    border: 1px solid var(--complementairekleur);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px var(--complementairekleur);
+    padding: 3rem;
+}
+
+form label,form input{
+    width: 300px;
+    margin-bottom: 10px;
+}
+form textarea{
+    width: 50%;
+}
+form{
+    border: 1px solid var(--complementairekleur);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    color: var(--formkleur);
+    box-shadow: 5px 5px 20px var(--complementairekleur);
+    background-color: var(--complementairekleur);
+    border-radius: 10px;
+}
+aside{
+    border: 1px solid var(--complementairekleur);
+    color: var(--formkleur);
+    background-color: var(--complementairekleur);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    font-size: large;
+    box-shadow: 5px 5px 20px var(--complementairekleur);
+    height: fit-content;
+}
+aside p{
+    margin-top: 1rem;
+}
+aside a{
+    color: white;
+}
+aside a:hover{
+    color: red;
+}
+footer{
+    text-align: center;
+    margin-top: 3rem;
+}
